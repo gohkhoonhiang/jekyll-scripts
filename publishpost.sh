@@ -1,3 +1,5 @@
+#!/bin/bash
+
 echo $1
 for f in $(ls _drafts/); do
     if [[ "$f" == *"$1"* ]]; then

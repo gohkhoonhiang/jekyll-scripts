@@ -1,6 +1,5 @@
-if [ ! -d "_drafts" ]; then
-    mkdir _drafts
-fi
+#!/bin/bash
+
 now=$(date +%Y-%m-%d)
 if [ -n "$1" ]; then
     filename="_drafts/$now-$1.markdown"
