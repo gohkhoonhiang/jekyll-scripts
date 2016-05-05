@@ -8,9 +8,17 @@ else
 fi
 echo $filename
 postdate=$(date +"%Y-%m-%d %H:%M:%S")
+if [ -n "$1" ]; then
+    title=""
+    for t in $(echo "$1" | tr "-" "\n"); do
+        title="$title $(echo "$t" | sed -e 's/^./\U&/')"
+    done
+else
+    title=""
+fi
 echo "---
 layout: post
-title:  ""
+title: $title
 date: $postdate +0800
 tags: 
 description: 
