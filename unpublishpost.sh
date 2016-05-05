@@ -7,4 +7,4 @@ for f in $(ls _posts/); do
         mv _posts/$f _drafts/$f
     fi
 done
-ls -laG _drafts/
+ls -laG _drafts/ _posts/

@@ -15,4 +15,4 @@ for f in $(ls _drafts/); do
         sed -i "4s/.*.*/date: `date +'%Y-%m-%d %H:%M:%S'` +0800/g" "_posts/$newfilename"
     fi
 done
-ls -laG _posts/
+ls -laG _posts/ _drafts/
